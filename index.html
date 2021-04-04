@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Guess The Word</title>
 
-<title>C81</title>
-<link rel="stylesheet" type="text/css" href="C81style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="game_login.js"></script>
 </head>
-<body class="body_backgorund">
-
+<body>
 <center>
-	<h1>olympic</h1>
-    <canvas id="mycanvas" width="800" height="600">
+	<h1>GAME</h1>
+	
+	<div class="col-lg-4 col-sm-8 col-xs-11 div_1">
+		<h3>player_1 login for the game</h3>
+		<label>username:</label>
+		<input id="p1_input" class="form-control" placeholder="input your nickname here" type="text">
+		<br>
+		
+	</div>
+	<br>
+	<div class="col-lg-4 col-sm-8 col-xs-11 div_2">
+		<h3>player_2 login for the game</h3>
+		<label>username:</label>
+		<input id="p2_input" class="form-control" placeholder="input your nickname here" type="text">
+		<br>
+		
+	</div>
+	<br>
+	<button class="btn btn-primary" style="width: 30%;" onclick="adduser()">
+LOGIN
+	</button>
 
-    </canvas>
 </center>
-
-
-<script src="main.js"></script>
 </body>
 </html>
